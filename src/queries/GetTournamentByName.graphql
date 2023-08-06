@@ -1,0 +1,7 @@
+query GetTournamentByName($name: String!) {
+  tournaments(query: { page: 1, filter: { name: $name } }) {
+    nodes {
+      name
+    }
+  }
+}

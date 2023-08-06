@@ -1,0 +1,14 @@
+query StreamQueueOnTournament($tourneySlug: String!) {
+  tournament(slug: $tourneySlug) {
+    id
+    streamQueue {
+      stream {
+        streamSource
+        streamName
+      }
+      sets {
+        id
+      }
+    }
+  }
+}
